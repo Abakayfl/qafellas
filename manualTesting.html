@@ -46,52 +46,48 @@
         </ul>
       </nav>
     </header>
-    <section>
-      <h1 style="font-size: 36px; text-align: center">Manual Testing Page</h1>
-      <div class="grid">
-        <div class="grid__item">
-          <h2>Lesson 1</h2>
-          <p></p>
-        </div>
-        <div class="grid__item">
-          <h2>Lesson 2</h2>
-          <p></p>
-        </div>
-        <div class="grid__item">
-          <h2>Lesson 3</h2>
-          <p></p>
-        </div>
-        <div class="grid__item">
-          <h2>Lesson 4</h2>
-          <p></p>
-        </div>
-        <div class="grid__item">
-          <h2>Lesson 5</h2>
-          <p></p>
-        </div>
-        <div class="grid__item">
-          <h2>Lesson 6</h2>
-          <p></p>
-        </div>
-        <div class="grid__item">
-          <h2>Lesson 7</h2>
-          <p></p>
-        </div>
-        <div class="grid__item">
-          <h2>Lesson 8</h2>
-          <p></p>
-        </div>
+    <div class="big-content">
+      <button type="button" class="collapsible">Lesson 1</button>
+      <div class="content">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
+        </p>
       </div>
-    </section>
+
+      <button type="button" class="collapsible">Lesson 2</button>
+      <div class="content">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
+        </p>
+      </div>
+      <button type="button" class="collapsible">Lesson 3</button>
+      <div class="content">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
+        </p>
+      </div>
+      <button type="button" class="collapsible">Lesson 4</button>
+      <div class="content">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
+        </p>
+      </div>
+    </div>
     <footer
       class="page-footer"
-      style="
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        background-color: rgb(197, 194, 194);
-      "
+      
     >
       <p>Find us on</p>
       <div class="social-media">
@@ -104,6 +100,20 @@
         /></a>
       </div>
     </footer>
-    <script src="js/tota11y.min.js"></script>
+    <script>
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.display === "block") {
+            content.style.display = "none";
+          } else {
+            content.style.display = "block";
+          }
+        });
+      }
+    </script>
   </body>
 </html>
