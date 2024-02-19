@@ -1,4 +1,4 @@
-# Portfolio-Website
+# QAFellas-Website
 
 ## Description
 
@@ -11,14 +11,12 @@
 ## Style Implementation
 
 
-### React Libraries
-
-
 
 ## Key Features
 
 
 
-## Link of my portfolio
+## Link of QAFellas Website
 
+https://abakayfl.github.io/qafellas/
 
